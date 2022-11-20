@@ -1,0 +1,15 @@
+key,learning-time,unity,key:course,key:theory-tutorial,key:lab-tutorial
+register-01,15,minutes,course-01,theory-tutorial-01,
+register-02,20,minutes,course-01,,lab-tutorial-01
+register-03,35,minutes,course-02,,lab-tutorial-03
+register-04,22,minutes,course-02,theory-tutorial-05,
+register-05,19,minutes,course-03,,lab-tutorial-06
+register-06,42,minutes,course-04,theory-tutorial-02,
+register-07,36,minutes,course-04,,lab-tutorial-02
+register-08,24,minutes,course-05,,lab-tutorial-01
+register-09,26,minutes,course-05,theory-tutorial-02,
+register-10,18,minutes,course-06,theory-tutorial-03,
+register-11,23,minutes,course-07,,lab-tutorial-05
+register-12,27,minutes,course-07,theory-tutorial-04,
+register-13,33,minutes,course-08,theory-tutorial-06,
+register-14,39,minutes,course-09,,lab-tutorial-04

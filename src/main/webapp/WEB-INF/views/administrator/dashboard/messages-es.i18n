@@ -1,0 +1,43 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.general-indicators = Indicadores generales
+
+administrator.dashboard.form.label.totalNumberOfTheoryTutorials = Numero total de tutoriales teóricos
+administrator.dashboard.form.label.totalNumberOfLabTutorials= Numero total de tutoriales laboratorio
+administrator.dashboard.form.label.averageCostOfTheoryTutorials= Media precio de tutoriales teóricos
+administrator.dashboard.form.label.deviationCostOfTheoryTutorials= Desviacion precio de tutoriales teóricos
+administrator.dashboard.form.label.minimumCostOfTheoryTutorials= Minimo precio de tutoriales teóricos
+administrator.dashboard.form.label.maximumCostOfTheoryTutorials = Maximo precio de tutoriales teóricos
+administrator.dashboard.form.label.averageCostOfLabTutorials= Media precio de tutoriales laboratorio
+administrator.dashboard.form.label.deviationCostOfLabTutorials= Desviacion precio de tutoriales laboratorio
+administrator.dashboard.form.label.minimumCostOfLabTutorials= Minimo precio de tutoriales laboratorio
+administrator.dashboard.form.label.maximumCostOfLabTutorials= Maximo precio de tutoriales laboratorio
+
+administrator.dashboard.form.label.totalNumberOfProposedHelpRequests= Numero total de tutorias propuestas
+administrator.dashboard.form.label.totalNumberOfAcceptedHelpRequests = Numero total de tutorias aceptadas
+administrator.dashboard.form.label.totalNumberOfDeniedHelpRequests = Numero total de tutorias denegadas
+
+administrator.dashboard.form.label.averageBudgetOfProposedHelpRequests = Media del presupuesto de las tutorias propuestas
+administrator.dashboard.form.label.deviationBudgetOfProposedHelpRequests = Desviacion del presupuesto de las tutorias propuestas
+administrator.dashboard.form.label.minimumBudgetOfProposedHelpRequests =Minimo del presupuesto de las tutorias propuestas
+administrator.dashboard.form.label.maximumBudgetOfProposedHelpRequests= Maximo del presupuesto de las tutorias propuestas
+
+administrator.dashboard.form.label.averageBudgetOfAcceptedHelpRequests =Media del presupuesto de las tutorias aceptadas
+administrator.dashboard.form.label.deviationBudgetOfAcceptedHelpRequests = Desviacion del presupuesto de las tutorias aceptadas
+administrator.dashboard.form.label.minimumBudgetOfAcceptedHelpRequests=Minimo del presupuesto de las tutorias aceptadas
+administrator.dashboard.form.label.maximumBudgetOfAcceptedHelpRequests=Maximo del presupuesto de las tutorias aceptadas
+
+administrator.dashboard.form.label.averageBudgetOfDeniedHelpRequests= Media del presupuesto de las tutorias denegadas
+administrator.dashboard.form.label.deviationBudgetOfDeniedHelpRequests=Desviacion del presupuesto de las tutorias denegadas
+administrator.dashboard.form.label.minimumBudgetOfDeniedHelpRequests=Minimo del presupuesto de las tutorias denegadas
+administrator.dashboard.form.label.maximumBudgetOfDeniedHelpRequests =Maximo del presupuesto de las tutorias denegadas
+
+

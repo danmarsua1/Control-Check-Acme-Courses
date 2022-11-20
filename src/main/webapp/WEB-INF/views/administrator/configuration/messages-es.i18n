@@ -1,0 +1,24 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.configuration.configuration.form.label.currency = Moneda actual
+administrator.configuration.configuration.form.label.acceptedCurrencies = Divisas aceptadas
+administrator.configuration.configuration.form.label.spamRecords = Registros Spam
+administrator.configuration.configuration.form.label.spamRecords.term = Término
+administrator.configuration.configuration.form.label.spamRecords.weight = Peso
+administrator.configuration.configuration.form.label.spamRecords.boosterTerm.undefined = No definido
+administrator.configuration.configuration.form.label.spamRecords.boosterTerm = Término potenciador
+administrator.configuration.configuration.form.label.spamThreshold= Umbral del spam
+administrator.configuration.configuration.form.label.spamBooster = Potenciador spam
+
+administrator.configuration.configuration.form.label.newSpamRecord = Nuevo Registro Spam
+administrator.configuration.configuration.form.button.update = Actualizar
+
+administrator.configuration.configuration.form.error.currency = La divisa debe encontrarse dentro de las divisas aceptadas

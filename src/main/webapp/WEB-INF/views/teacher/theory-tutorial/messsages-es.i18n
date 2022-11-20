@@ -1,0 +1,29 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for teacher particular
+# purposes.  The copyright owner does not offer teacher warranties or representations, nor do
+# they accept teacher liabilities with respect to them.
+
+teacher.theory-tutorial.list.label.title = Nombre
+teacher.theory-tutorial.list.label.abstractText = Descripción
+
+teacher.theory-tutorial.form.label.ticker = Código
+teacher.theory-tutorial.form.label.title = Nombre
+teacher.theory-tutorial.form.label.abstractText = Descripción
+teacher.theory-tutorial.form.label.cost = Precio
+teacher.theory-tutorial.form.label.link = Link
+
+teacher.course.form.label.selectCourse = Seleccione curso
+teacher.theory-tutorial.form.label.learning-time = Duración del tutorial
+
+teacher.theory-tutorial.form.button.create = Crear
+teacher.theory-tutorial.form.button.update = Actualizar
+teacher.theory-tutorial.form.button.delete = Borrar
+teacher.theory-tutorial.form.button.publish = Publicar
+
+teacher.theory-tutorial.form.error.negative-amount = El importe del coste no puede ser inferior o igual a 0
+teacher.theory-tutorial.form.error.unknown-currency = La divisa del coste no es aceptada por el sistema

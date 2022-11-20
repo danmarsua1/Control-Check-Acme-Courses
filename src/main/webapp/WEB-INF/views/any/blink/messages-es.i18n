@@ -1,0 +1,23 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.blink.form.label.creation-moment = Momento de creación:
+any.blink.form.label.caption = Título:
+any.blink.form.label.author = Autor:
+any.blink.form.label.message = Cuerpo:
+any.blink.form.label.email = Correo electrónico:
+
+any.blink.list.label.creation-moment = Momento de creación
+any.blink.list.label.author = Autor
+any.blink.list.label.caption = Título
+
+any.blink.form.button.create = Crear
+any.blink.form.label.confirmation = Los blinks no se pueden actualizar ni borrar. Es necesario confirmar su creación.
+any.blink.confirmation.error = Se necesita confirmación para crear el blink

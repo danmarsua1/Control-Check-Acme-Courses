@@ -1,0 +1,21 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for teacher particular
+# purposes.  The copyright owner does not offer teacher warranties or representations, nor do
+# they accept teacher liabilities with respect to them.
+
+teacher.follow-up.list.label.sequenceNumber = Code
+teacher.follow-up.list.label.message = Message
+
+teacher.follow-up.form.label.sequenceNumber = Code
+teacher.follow-up.form.label.message = Message
+teacher.follow-up.form.label.creationMoment = Creation moment
+teacher.follow-up.form.label.link = Link
+
+teacher.follow-up.form.button.create = Create
+teacher.follow-up.form.label.confirmation = Follow ups cannot be updated or deleted. Need to confirm.
+teacher.follow-up.confirmation.error = You need to check the checkbox to create the follow up

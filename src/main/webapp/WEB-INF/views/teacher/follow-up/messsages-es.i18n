@@ -1,0 +1,21 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for teacher particular
+# purposes.  The copyright owner does not offer teacher warranties or representations, nor do
+# they accept teacher liabilities with respect to them.
+
+teacher.follow-up.list.label.sequenceNumber = Código
+teacher.follow-up.list.label.message = Mensaje
+
+teacher.follow-up.form.label.sequenceNumber = Código
+teacher.follow-up.form.label.message = Mensaje
+teacher.follow-up.form.label.creationMoment = Descripción
+teacher.follow-up.form.label.link = Link
+
+teacher.follow-up.form.button.create = Crear
+teacher.follow-up.form.label.confirmation = Los seguimientos no se pueden actualizar ni borrar. Es necesario confirmar su creación.
+teacher.follow-up.confirmation.error = Se necesita confirmación para crear un seguimiento

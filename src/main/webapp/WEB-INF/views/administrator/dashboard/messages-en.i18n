@@ -1,0 +1,42 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.general-indicators = General indicators
+ 
+administrator.dashboard.form.label.totalNumberOfTheoryTutorials = Total number of theory tutorials
+administrator.dashboard.form.label.totalNumberOfLabTutorials = Total number of lab tutorials
+administrator.dashboard.form.label.averageCostOfTheoryTutorials= Average cost of theory tutorials
+administrator.dashboard.form.label.deviationCostOfTheoryTutorials= Deviation cost of theory tutorials
+administrator.dashboard.form.label.minimumCostOfTheoryTutorials= Minimum cost of theory tutorials
+administrator.dashboard.form.label.maximumCostOfTheoryTutorials= Maximum cost of theory tutorials
+administrator.dashboard.form.label.averageCostOfLabTutorials= Average cost of lab tutorials
+administrator.dashboard.form.label.deviationCostOfLabTutorials= Deviation cost of lab tutorials
+administrator.dashboard.form.label.minimumCostOfLabTutorials= Minimum cost of lab tutorials
+administrator.dashboard.form.label.maximumCostOfLabTutorials= Maximum cost of lab tutorials
+
+administrator.dashboard.form.label.totalNumberOfProposedHelpRequests= Total number of proposed help-requests
+administrator.dashboard.form.label.totalNumberOfAcceptedHelpRequests = Total number of accepted help-requests
+administrator.dashboard.form.label.totalNumberOfDeniedHelpRequests = Total number of denied help-requests
+
+administrator.dashboard.form.label.averageBudgetOfProposedHelpRequests = Average budget of proposed help-requests
+administrator.dashboard.form.label.deviationBudgetOfProposedHelpRequests = Deviation budget of proposed help-requests
+administrator.dashboard.form.label.minimumBudgetOfProposedHelpRequests =Minimum budget of proposed help-requests
+administrator.dashboard.form.label.maximumBudgetOfProposedHelpRequests= Maximum budget of proposed help-requests
+
+administrator.dashboard.form.label.averageBudgetOfAcceptedHelpRequests =Average budget of accepted help-requests
+administrator.dashboard.form.label.deviationBudgetOfAcceptedHelpRequests = Deviation budget of accepted help-requests
+administrator.dashboard.form.label.minimumBudgetOfAcceptedHelpRequests=Minimum budget of accepted help-requests
+administrator.dashboard.form.label.maximumBudgetOfAcceptedHelpRequests=Maximum budget of accepted help-requests
+
+administrator.dashboard.form.label.averageBudgetOfDeniedHelpRequests= Average budget of accepted help-requests
+administrator.dashboard.form.label.deviationBudgetOfDeniedHelpRequests=Deviation budget of denied help-requests
+administrator.dashboard.form.label.minimumBudgetOfDeniedHelpRequests=Minimum budget of denied help-requests
+administrator.dashboard.form.label.maximumBudgetOfDeniedHelpRequests =Maximum budget of denied help-requests
+

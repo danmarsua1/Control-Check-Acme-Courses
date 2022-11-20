@@ -1,0 +1,29 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+teacher.course.list.label.ticker = Código
+teacher.course.list.label.caption = Título
+teacher.course.list.label.abstractText = Descripción
+teacher.course.list.label.publish = Publicado
+
+teacher.course.form.label.ticker = Código
+teacher.course.form.label.caption = Título
+teacher.course.form.label.abstractText = Descripción
+teacher.course.form.label.publish = Publicado
+teacher.course.form.label.link = Link
+teacher.course.form.label.totalPrice = Precio total
+
+teacher.course.form.button.create = Crear
+teacher.course.form.button.update = Actualizar
+teacher.course.form.button.delete = Borrar
+teacher.course.form.button.publish = Publicar
+
+teacher.course.form.label.list-lab-tutorial = Listar Tutorial Lab.
+teacher.course.form.label.list-theory-tutorial = Listar Tutorial Teóricos.

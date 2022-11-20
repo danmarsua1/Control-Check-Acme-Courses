@@ -1,0 +1,9 @@
+key,sequence-number,creation-moment,message,link,key:help-request
+follow-up-01,HRE-001:0001,2020/01/01 10:00,followUp,https://www.link1.com,help-request-01
+follow-up-02,HRE-002:0001,2022/08/21 10:00,followUp,https://www.link2.com,help-request-02
+follow-up-03,HRE-002:0002,2021/01/01 10:00,followUp,https://www.link3.com,help-request-02
+follow-up-04,HRE-003:0001,2022/08/22 10:00,followUp,https://www.link4.com,help-request-03
+follow-up-05,HRE-004:0001,2021/01/01 10:00,followUp,https://www.link5.com,help-request-04
+follow-up-06,HRE-005:0001,2022/08/23 10:00,followUp,https://www.link6.com,help-request-05
+follow-up-07,HRE-006:0001,2021/01/01 10:00,followUp,https://www.link7.com,help-request-06
+follow-up-08,HRE-007:0001,2022/08/19 10:00,followUp,https://www.link8.com,help-request-07

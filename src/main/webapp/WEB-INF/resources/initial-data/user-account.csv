@@ -1,0 +1,12 @@
+key,enabled,identity,password,username
+user-account-anonymous-01,false,"UserIdentity{name: 'John', surname: 'Doe', email: 'john.doe@acme.com'}",HIDDEN-PASSWORD,anonymous
+user-account-administrator-01,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator@acme.com'}",administrator,administrator
+user-account-learner1,true,"UserIdentity{name: 'Learner1', surname: 'One', email: 'learner1@acme.com'}",learner1,learner1
+user-account-learner2,true,"UserIdentity{name: 'Learner2', surname: 'Two', email: 'learner2@acme.com'}",learner2,learner2
+user-account-learner3,true,"UserIdentity{name: 'Learner3', surname: 'Three', email: 'learner3@acme.com'}",learner3,learner3
+user-account-learner4,true,"UserIdentity{name: 'Learner4', surname: 'Four', email: 'learner4@acme.com'}",learner4,learner4
+user-account-learner5,true,"UserIdentity{name: 'Learner5', surname: 'Five', email: 'learner5@acme.com'}",learner5,learner5
+user-account-teacher1,true,"UserIdentity{name: 'Teacher1', surname: 'One', email: 'teacher1@acme.com'}",teacher1,teacher1
+user-account-teacher2,true,"UserIdentity{name: 'Teacher2', surname: 'Two', email: 'teacher2@acme.com'}",teacher2,teacher2
+user-account-teacher3,true,"UserIdentity{name: 'Teacher3', surname: 'Three', email: 'teacher3@acme.com'}",teacher3,teacher3
+user-account-teacher4,true,"UserIdentity{name: 'Teacher4', surname: 'Four', email: 'teacher4@acme.com'}",teacher4,teacher4

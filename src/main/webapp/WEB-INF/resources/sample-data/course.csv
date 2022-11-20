@@ -1,0 +1,10 @@
+key,ticker,caption,abstract-text,link,key:teacher,publish
+course-01,COU-001,Course-01,The Good Course,https://www.course1.com,teacher-01,true
+course-02,COU-002,Course-02,The Bad Course,https://www.course2.com,teacher-01,true
+course-03,COU-003,Course-03,The Regular Course,https://www.course3.com,teacher-01,true
+course-04,COU-004,Course-04,The Good Course,https://www.course4.com,teacher-01,true
+course-05,COU-005,Course-05,The Bad Course,https://www.course5.com,teacher-01,true
+course-06,COU-006,Course-06,The Regular Course,https://www.course6.com,teacher-02,true
+course-07,COU-007,Course-07,The Good Course,https://www.course7.com,teacher-02,true
+course-08,COU-008,Course-08,The Regular Course,https://www.course8.com,teacher-02,true
+course-09,COU-009,Course-09,The Bad Course,https://www.course9.com,teacher-02,true

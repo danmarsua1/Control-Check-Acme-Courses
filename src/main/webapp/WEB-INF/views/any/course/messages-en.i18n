@@ -1,0 +1,12 @@
+any.course.list.label.caption = Heading:
+any.course.list.label.abstractText = Description:
+
+any.course.form.label.ticker = Code:
+any.course.form.label.caption = Heading:
+any.course.form.label.abstractText = Description:
+any.course.form.label.link = Link:
+any.course.form.label.cost = Prices:
+
+any.course.form.label.list-theory-tutorial = View theory tutorial
+any.course.form.label.list-lab-tutorial = View lab tutorial
+

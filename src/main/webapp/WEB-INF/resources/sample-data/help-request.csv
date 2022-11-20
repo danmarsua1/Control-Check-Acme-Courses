@@ -1,0 +1,16 @@
+key,status,ticker,statement,budget,creation-moment,init-date,finish-date,link,key:learner,key:teacher,publish
+help-request-01,PROPOSED,HRE-001,Help,EUR 10.0,2022/08/21 10:00,2022/08/21 11:00,2022/09/21 11:00,https://www.link1.com,learner-01,teacher-01,false
+help-request-02,ACCEPTED,HRE-002,Help,USD 12.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link2.com,learner-02,teacher-02,true
+help-request-03,ACCEPTED,HRE-003,Help,GBP 13.0,2022/09/01 10:00,2022/10/04 11:00,2022/12/01 12:00,https://www.link3.com,learner-03,teacher-02,true
+help-request-04,PROPOSED,HRE-004,Help,USD 9.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link4.com,learner-03,teacher-01,false
+help-request-05,DENIED,HRE-005,Help,GBP 15.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link5.com,learner-04,teacher-03,true
+help-request-06,DENIED,HRE-006,Help,GBP 23.0,2022/09/01 10:00,2022/10/02 11:00,2022/12/01 12:00,https://www.link6.com,learner-04,teacher-04,true
+help-request-07,DENIED,HRE-007,Help,GBP 8.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link7.com,learner-01,teacher-03,true
+help-request-08,ACCEPTED,HRE-008,Help,EUR 10.0,2022/09/01 10:00,2022/10/04 11:00,2022/12/01 12:00,https://www.link8.com,learner-02,teacher-01,true
+help-request-09,ACCEPTED,HRE-009,Help,EUR 13.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link9.com,learner-04,teacher-02,true
+help-request-10,ACCEPTED,HRE-010,Help,EUR 16.0,2022/08/20 10:00,2022/08/20 11:00,2022/09/20 11:00,https://www.link10.com,learner-01,teacher-04,true
+help-request-11,DENIED,HRE-011,Help,GBP 12.0,2022/09/01 10:00,2022/10/02 11:00,2022/12/01 12:00,https://www.link11.com,learner-02,teacher-03,true
+help-request-12,DENIED,HRE-012,Help,USD 10.0,2022/09/01 10:00,2022/10/02 11:00,2022/12/01 12:00,https://www.link12.com,learner-01,teacher-01,true
+help-request-13,DENIED,HRE-013,Help,EUR 10.0,2022/09/01 10:00,2022/10/03 11:00,2022/12/01 12:00,https://www.link13.com,learner-02,teacher-02,true
+help-request-14,DENIED,HRE-014,Help,USD 11.0,2022/09/01 10:00,2022/10/04 11:00,2022/12/01 12:00,https://www.link14.com,learner-03,teacher-03,true
+help-request-15,PROPOSED,HRE-015,Help,USD 10.0,2022/08/19 10:00,2022/08/19 11:00,2022/08/19 11:00,https://www.link15.com,learner-04,teacher-04,false

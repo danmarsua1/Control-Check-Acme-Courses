@@ -1,0 +1,34 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for learner particular
+# purposes.  The copyright owner does not offer learner warranties or representations, nor do
+# they accept learner liabilities with respect to them.
+
+learner.help-request.list.label.ticker = Código
+learner.help-request.list.label.statement = Comunicado
+
+learner.help-request.form.label.ticker = Código
+learner.help-request.form.label.statement = Comunicado
+learner.help-request.form.label.creationMoment = Fecha creación
+learner.help-request.form.label.initDate = Fecha inicio
+learner.help-request.form.label.finishDate = Fecha fin
+learner.help-request.form.label.status = Estado
+learner.help-request.form.label.budget = Presupuesto
+learner.help-request.form.label.link = Link
+
+learner.help-request.form.button.create = Crear
+learner.help-request.form.button.update = Actualizar
+learner.help-request.form.button.delete = Borrar
+learner.help-request.form.button.publish = Publicar
+learner.help-request.follow-up.form.button.create = Nuevo seguimiento
+
+learner.help-request.form.error.too-close-initial = La fecha inicial introducida debe ser al menos una semana después de la fecha de creación de la tutoría
+learner.help-request.form.error.too-close-final = La fecha final introducida debe ser al menos un día después de la fecha inicial de la tutoría
+learner.help-request.form.error.negative-amount = El importe del presupuesto no puede ser inferior o igual a 0
+learner.help-request.form.error.unknown-currency = La divisa del presupuesto no es aceptada por el sistema
+
+learner.help-request.form.label.select-teacher = Elige un profesor

@@ -1,0 +1,34 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for learner particular
+# purposes.  The copyright owner does not offer learner warranties or representations, nor do
+# they accept learner liabilities with respect to them.
+
+learner.help-request.list.label.ticker = Code
+learner.help-request.list.label.statement = Statement
+
+learner.help-request.form.label.ticker = Code
+learner.help-request.form.label.statement = Statement
+learner.help-request.form.label.creationMoment = Creation moment
+learner.help-request.form.label.initDate = Init date
+learner.help-request.form.label.finishDate = Finish date
+learner.help-request.form.label.status = Status
+learner.help-request.form.label.budget = Budget
+learner.help-request.form.label.link = Link
+
+learner.help-request.form.button.create = Create
+learner.help-request.form.button.update = Update
+learner.help-request.form.button.delete = Delete
+learner.help-request.form.button.publish = Publish
+learner.help-request.follow-up.form.button.create = New Follow Up
+
+learner.help-request.form.error.too-close-initial = The entered initial period date must be at least one week after the help request creation date
+learner.help-request.form.error.too-close-final = The entered final period date must be at least one day after the help request initial period date
+learner.help-request.form.error.negative-amount = The budget's amount can not lower or equal than 0
+learner.help-request.form.error.unknown-currency = The budget's currency is not accepted by the system
+
+learner.help-request.form.label.select-teacher = Select teacher

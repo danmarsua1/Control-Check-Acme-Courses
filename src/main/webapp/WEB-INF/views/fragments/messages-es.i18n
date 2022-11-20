@@ -1,0 +1,45 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+﻿# master.menu #################################################################
+
+master.menu.home = Inicio
+
+﻿# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	Bienvenidos a Acme Courses!
+
+﻿# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguajes
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.panic ################################################################
+
+master.panic.title = Error inesperado
+master.panic.text = \
+	¡Lo sentimos! Si el error persiste, por favor, contacte con nosotros  lo
+	solventaremos lo más pronto posible.
+master.panic.label.request = Petición:
+master.panic.label.status = Estado:
+master.panic.label.exceptions = Errores:
+master.panic.text.consult-log = Por favor, consulte el log de la pila de llamadas
+
+# form.error ##################################################################
+form.error.spam = El texto introducido contiene spam
