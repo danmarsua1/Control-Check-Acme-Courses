@@ -17,7 +17,7 @@
 	<name>Acme Courses</name>
 	<description>This is the Acme Courses project for the students of Design &amp; Testing.</description>
 
-	<artifactId>Control-Check-Acme-Courses</artifactId>
+	<artifactId>Acme-Courses-D06</artifactId>
 	<version>22.8</version>
 	<packaging>war</packaging>
 
