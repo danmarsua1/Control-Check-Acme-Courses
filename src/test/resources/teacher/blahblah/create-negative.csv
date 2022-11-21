@@ -1,0 +1,6 @@
+recordIndex,ticker,caption,summary,cost,creation-moment,init-date,finish-date,hlink
+0,,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,Abstract Blah,EUR 10.00,,2022/12/26 11:20,2022/12/27 11:22,https://www.link.com
+1,,ZZZ02,cialis,EUR 12,,2022/12/26 10:00,2022/12/27 10:32,https://www.link.com
+2,,ZZZ02,Abstract Blah,EUR -12,,2022/12/26 10:00,2022/12/27 10:32,https://www.link.com
+3,,ZZZ03,Abstract Blah,ARG 14,,2022/10/28 10:00,2022/12/27 10:32,https://www.link.com
+4,,ZZZ04,Abstract Blah,EUR 14,,2022/10/26 10:00,2022/12/28 10:32,https://www.link.com

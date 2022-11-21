@@ -1,7 +1,6 @@
 key,ticker,caption,summary,cost,creation-moment,init-date,finish-date,hlink,key:theory-tutorial
 blahblah-01,AAA-221110,Blah,Abstract Blah,EUR 10.0,2022/11/10 09:00,2022/11/18 11:20,2022/11/21 11:20,https://www.link1.com,theory-tutorial-01
-blahblah-02,BBB-221110,Blah,Abstract Blah,USD 12.0,2022/11/11 10:13,2022/11/19 14:30,2022/11/22 14:30,https://www.link2.com,theory-tutorial-02
-blahblah-03,CCC-221110,Blah,Abstract Blah,GBP 13.0,2022/11/10 07:34,2022/11/18 11:00,2022/11/21 11:41,https://www.link3.com,theory-tutorial-03
-blahblah-04,DDD-221110,Blah,Abstract Blah,USD 9.0,2022/11/11 10:20,2022/11/19 08:40,2022/11/23 20:40,https://www.link4.com,theory-tutorial-04
-blahblah-05,EEE-221110,Blah,Abstract Blah,GBP 15.0,2022/11/10 12:00,2022/11/18 10:00,2022/11/23 10:32,https://www.link5.com,theory-tutorial-05
-blahblah-06,FFF-221110,Blah,Abstract Blah,GBP 23.0,2022/11/12 10:00,2022/11/20 11:00,2022/11/22 08:00,https://www.link6.com,theory-tutorial-06
+blahblah-02,BBB-221110,Blah,Abstract Blah,EUR 12.0,2022/11/11 10:13,2022/11/19 14:30,2022/11/22 14:30,https://www.link2.com,theory-tutorial-02
+blahblah-03,CCC-221110,Blah,Abstract Blah,EUR 13.0,2022/11/10 07:34,2022/11/18 11:00,2022/11/21 11:41,https://www.link3.com,theory-tutorial-03
+blahblah-04,DDD-221110,Blah,Abstract Blah,EUR 9.0,2022/11/11 10:20,2022/11/19 08:40,2022/11/23 20:40,https://www.link4.com,theory-tutorial-04
+blahblah-05,EEE-221110,Blah,Abstract Blah,EUR 15.0,2022/11/10 12:00,2022/11/18 10:00,2022/11/23 10:32,https://www.link5.com,theory-tutorial-05

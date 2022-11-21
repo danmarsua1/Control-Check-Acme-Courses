@@ -59,7 +59,7 @@ public class TeacherBlahblahListService implements AbstractListService<Teacher, 
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "caption");
+		request.unbind(entity, model, "ticker", "caption", "creationMoment");
 	}
 
 }
