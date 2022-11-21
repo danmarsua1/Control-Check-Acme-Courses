@@ -77,10 +77,12 @@ public class TeacherTheoryTutorialCreateService implements AbstractCreateService
 		
 		// Manage unique code
 		String ticker = "";
+		int cont = 1;
 
-		do
-			ticker = this.createTicker();
-		while (!this.isTickerUnique(ticker));
+		do {
+			ticker = this.createTicker(cont);
+			cont++;
+		}while (!this.isTickerUnique(ticker,cont));
 		result.setTicker(ticker);
 		result.setPublish(false);
 
@@ -162,6 +164,11 @@ public class TeacherTheoryTutorialCreateService implements AbstractCreateService
 		
 		this.repository.save(entity);
 		
+		Register oldRegister = this.registerRepository.findOneRegisterByHasTheoryTutorialAndCourseId(course.getId());
+		
+		if(oldRegister!=null)
+			this.registerRepository.delete(oldRegister);
+		
 		Register register = new Register();
 		register.setTheoryTutorial(entity);
 		register.setLearningTime(learningTime);
@@ -177,20 +184,20 @@ public class TeacherTheoryTutorialCreateService implements AbstractCreateService
 	
 	// Other methods
 	
-	public String createTicker() {
+	public String createTicker(int cont) {
 
 		// The ticker must be as follow: TTU-XXX
 		String ticker = "";
 		final String TICKER_PREFIX = "TTU";
 
 		// Set ticker format
-		ticker = TICKER_PREFIX + "-" + this.nextSequenceNumber();
+		ticker = TICKER_PREFIX + "-" + this.nextSequenceNumber(cont);
 
 		return ticker;
 
 	}
 	
-	public boolean isTickerUnique(final String ticker) {
+	public boolean isTickerUnique(final String ticker, int cont) {
 
 		Boolean result = true;
 
@@ -204,14 +211,14 @@ public class TeacherTheoryTutorialCreateService implements AbstractCreateService
 
 		if (tickers.contains(ticker)) {
 			result = false;
-			this.createTicker();
+			this.createTicker(cont);
 		}
 
 		return result;
 
 	}
 	
-	public String nextSequenceNumber() {
+	public String nextSequenceNumber(int cont) {
 		
 		String res = "";
 		int total;
@@ -219,7 +226,7 @@ public class TeacherTheoryTutorialCreateService implements AbstractCreateService
 		final ArrayList<TheoryTutorial> theoryTutorials = new ArrayList<>(this.anyTheoryTutorials.findAllUnpublishedTheoryTutorials());
 		int size = theoryTutorials.size();
 		
-		total = size + 1;
+		total = size + cont;
 		
 		if(String.valueOf(total).length()==1) {
 			res = "00" + total;

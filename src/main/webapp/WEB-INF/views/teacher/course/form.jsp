@@ -24,10 +24,6 @@
 		<acme:input-textbox code="teacher.course.form.label.abstractText"
 			path="abstractText" />
 		<acme:input-url code="teacher.course.form.label.link" path="link" />
-		<jstl:if test="${command != 'create'}">
-			<acme:input-textbox readonly="true"
-				code="teacher.course.form.label.totalPrice" path="totalPrice" />
-		</jstl:if>
 	</jstl:if>
 
 	<jstl:if test="${publish eq true}">
@@ -39,8 +35,10 @@
 			code="teacher.course.form.label.abstractText" path="abstractText" />
 		<acme:input-url readonly="true"
 			code="teacher.course.form.label.link" path="link" />
-		<acme:input-textbox readonly="true"
+		<jstl:if test="${hasTheoryTutorial eq true || hasLabTutorial eq true}">
+			<acme:input-textbox readonly="true"
 			code="teacher.course.form.label.totalPrice" path="totalPrice" />
+		</jstl:if>
 	</jstl:if>
 
 	<jstl:choose>

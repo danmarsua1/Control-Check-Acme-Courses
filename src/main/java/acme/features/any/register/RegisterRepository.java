@@ -32,7 +32,19 @@ public interface RegisterRepository extends AbstractRepository {
 	@Query("select r from Register r where r.theoryTutorial.id = :id")
 	Register findOneRegisterByTheoryTutorial(int id);
 	
+	@Query("select r from Register r where r.theoryTutorial.id = :id")
+	Collection<Register> findManyRegisterByTheoryTutorial(int id);
+	
 	@Query("select r from Register r where r.labTutorial.id = :id")
 	Register findOneRegisterByLabTutorial(int id);
+	
+	@Query("select r from Register r where r.labTutorial.id = :id")
+	Collection<Register> findManyRegisterByLabTutorial(int id);
+
+	@Query("select r from Register r where r.theoryTutorial.id is not null and r.course.id = :id")
+	Register findOneRegisterByHasTheoryTutorialAndCourseId(int id);
+	
+	@Query("select r from Register r where r.labTutorial.id is not null and r.course.id = :id")
+	Register findOneRegisterByHasLabTutorialAndCourseId(int id);
 	
 }

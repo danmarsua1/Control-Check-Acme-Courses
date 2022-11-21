@@ -90,15 +90,6 @@ public class TeacherCourseShowService implements AbstractShowService<Teacher, Co
 		request.unbind(entity, model, "ticker", "caption", "abstractText", "link", "publish");
 		
 		int courseId = request.getModel().getInteger("id");
-		List<Object[]> priceTheoryTutorials = this.repository.getCourseTheoryTutorialsPrice(courseId);
-		List<Object[]> priceLabTutorials = this.repository.getCourseLabTutorialsPrice(courseId);
-		Money moneyTheoryTutorials = this.convertToLocalCurrencyAndSum(priceTheoryTutorials);
-		Money moneyLabTutorials = this.convertToLocalCurrencyAndSum(priceLabTutorials);
-
-		Money total = new Money();
-		total.setCurrency(moneyTheoryTutorials.getCurrency());
-		total.setAmount(moneyTheoryTutorials.getAmount()+moneyLabTutorials.getAmount());
-		model.setAttribute("totalPrice", total);
 		
 		// Has Theory tutorial or Lab Tutorial
 		Collection<TheoryTutorial> theoryTutorials  = this.theoryTutorialRepository.findManyTheoryTutorialsByCourseId(courseId);
@@ -107,6 +98,26 @@ public class TeacherCourseShowService implements AbstractShowService<Teacher, Co
 		hasLabTutorial = !labTutorials.isEmpty();
 		model.setAttribute("hasTheoryTutorial", hasTheoryTutorial);
 		model.setAttribute("hasLabTutorial", hasLabTutorial);
+		
+		if(hasTheoryTutorial || hasLabTutorial) {
+			List<Object[]> priceTheoryTutorials = this.repository.getCourseTheoryTutorialsPrice(courseId);
+			List<Object[]> priceLabTutorials = this.repository.getCourseLabTutorialsPrice(courseId);
+			Money moneyTheoryTutorials = this.convertToLocalCurrencyAndSum(priceTheoryTutorials);
+			Money moneyLabTutorials = this.convertToLocalCurrencyAndSum(priceLabTutorials);
+			
+			Money total = new Money();
+			if(hasTheoryTutorial && !hasLabTutorial) {
+				total.setCurrency(moneyTheoryTutorials.getCurrency());
+				total.setAmount(moneyTheoryTutorials.getAmount());
+			} else if(hasLabTutorial  && !hasTheoryTutorial) {
+				total.setCurrency(moneyLabTutorials.getCurrency());
+				total.setAmount(moneyLabTutorials.getAmount());
+			} else if(hasTheoryTutorial && hasLabTutorial) {
+				total.setCurrency(moneyTheoryTutorials.getCurrency());
+				total.setAmount(moneyTheoryTutorials.getAmount()+moneyLabTutorials.getAmount());
+			}
+			model.setAttribute("totalPrice", total);
+		}
 	}
 	
 	// Other methods

@@ -113,7 +113,7 @@ public class TeacherTheoryTutorialDeleteService implements AbstractDeleteService
 		assert request != null;
 		assert entity != null;
 		
-		Collection<Register> registers = this.registerRepository.findOneRegisterByTheoryTutorial(entity.getId());
+		Collection<Register> registers = this.registerRepository.findManyRegisterByTheoryTutorial(entity.getId());
 		for (final Register r : registers) {
 			this.registerRepository.delete(r);
 		}

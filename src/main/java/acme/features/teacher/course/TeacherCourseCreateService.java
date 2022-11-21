@@ -70,10 +70,12 @@ public class TeacherCourseCreateService implements AbstractCreateService<Teacher
 		
 		// Manage unique code
 		String ticker = "";
+		int cont = 1;
 
-		do
-			ticker = this.createTicker();
-		while (!this.isTickerUnique(ticker));
+		do {
+			ticker = this.createTicker(cont);
+			cont++;
+		}while (!this.isTickerUnique(ticker,cont));
 		result.setTicker(ticker);
 		result.setPublish(false);
 		
@@ -135,20 +137,20 @@ public class TeacherCourseCreateService implements AbstractCreateService<Teacher
 	
 	// Other methods
 	
-	public String createTicker() {
+	public String createTicker(int cont) {
 
 		// The ticker must be as follow: COU-XXX
 		String ticker = "";
 		final String TICKER_PREFIX = "COU";
 
 		// Set ticker format
-		ticker = TICKER_PREFIX + "-" + this.nextSequenceNumber();
+		ticker = TICKER_PREFIX + "-" + this.nextSequenceNumber(cont);
 
 		return ticker;
 
 	}
 	
-	public boolean isTickerUnique(final String ticker) {
+	public boolean isTickerUnique(final String ticker, int cont) {
 
 		Boolean result = true;
 
@@ -162,14 +164,14 @@ public class TeacherCourseCreateService implements AbstractCreateService<Teacher
 
 		if (tickers.contains(ticker)) {
 			result = false;
-			this.createTicker();
+			this.createTicker(cont);
 		}
 
 		return result;
 
 	}
 	
-	public String nextSequenceNumber() {
+	public String nextSequenceNumber(int cont) {
 		
 		String res = "";
 		int total;
@@ -177,7 +179,7 @@ public class TeacherCourseCreateService implements AbstractCreateService<Teacher
 		final ArrayList<Course> courses = new ArrayList<>(this.anyCourses.findAllUnpublishedCourses());
 		int size = courses.size();
 		
-		total = size + 1;
+		total = size + cont;
 		
 		if(String.valueOf(total).length()==1) {
 			res = "00" + total;
