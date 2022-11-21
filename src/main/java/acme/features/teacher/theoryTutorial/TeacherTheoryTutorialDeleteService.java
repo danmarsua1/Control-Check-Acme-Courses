@@ -12,16 +12,19 @@
 
 package acme.features.teacher.theoryTutorial;
 
+import java.util.Collection;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.Blahblah;
 import acme.entities.Course;
 import acme.entities.Register;
 import acme.entities.TheoryTutorial;
 import acme.features.any.course.AnyCourseRepository;
 import acme.features.any.register.RegisterRepository;
+import acme.features.teacher.blahblah.TeacherBlahblahRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -41,6 +44,9 @@ public class TeacherTheoryTutorialDeleteService implements AbstractDeleteService
 	
 	@Autowired
 	protected RegisterRepository registerRepository;
+	
+	@Autowired
+	protected TeacherBlahblahRepository teacherBlahblahrepository;
 
 	@Override
 	public boolean authorise(final Request<TheoryTutorial> request) {
@@ -107,9 +113,15 @@ public class TeacherTheoryTutorialDeleteService implements AbstractDeleteService
 		assert request != null;
 		assert entity != null;
 		
-		Register register = this.registerRepository.findOneRegisterByTheoryTutorial(entity.getId());
-		this.registerRepository.delete(register);
-
+		Collection<Register> registers = this.registerRepository.findOneRegisterByTheoryTutorial(entity.getId());
+		for (final Register r : registers) {
+			this.registerRepository.delete(r);
+		}
+		
+		Blahblah blahblah = this.teacherBlahblahrepository.findOneBlahblahByTheoryTutorialId(entity.getId());
+		if(blahblah!=null)
+			this.teacherBlahblahrepository.delete(blahblah);
+		
 		this.repository.delete(entity);
 		
 	}	

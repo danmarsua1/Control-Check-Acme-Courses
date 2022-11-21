@@ -53,6 +53,8 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.teacher" access="hasRole('Teacher')">
+			<acme:menu-suboption code="master.menu.teacher.list-blahblah" action="/teacher/blahblah/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.teacher.create-course" action="/teacher/course/create"/>
 			<acme:menu-suboption code="master.menu.teacher.list-course" action="/teacher/course/list"/>
 			<acme:menu-suboption code="master.menu.teacher.create-theory-tutorial" action="/teacher/theory-tutorial/create"/>

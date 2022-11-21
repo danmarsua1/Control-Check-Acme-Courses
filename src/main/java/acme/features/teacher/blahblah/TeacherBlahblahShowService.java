@@ -1,5 +1,5 @@
 /*
- * TeacherTheoryTutorialShowService.java
+ * TeacherBlahblahShowService.java
  *
  * Copyright (C) 2012-2022 Rafael Corchuelo.
  *
@@ -10,19 +10,13 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.teacher.theoryTutorial;
-
-import java.util.List;
+package acme.features.teacher.blahblah;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Blahblah;
-import acme.entities.Course;
-import acme.entities.TheoryTutorial;
 import acme.features.administrator.configuration.AdministratorConfigurationRepository;
-import acme.features.any.course.AnyCourseRepository;
-import acme.features.teacher.blahblah.TeacherBlahblahRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.datatypes.Money;
@@ -30,75 +24,59 @@ import acme.framework.services.AbstractShowService;
 import acme.roles.Teacher;
 
 @Service
-public class TeacherTheoryTutorialShowService implements AbstractShowService<Teacher, TheoryTutorial> {
+public class TeacherBlahblahShowService implements AbstractShowService<Teacher, Blahblah> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected TeacherTheoryTutorialRepository repository;
+	protected TeacherBlahblahRepository repository;
 	
 	@Autowired
 	protected AdministratorConfigurationRepository configurationRepository;
-	
-	@Autowired
-	protected AnyCourseRepository courseRepository;
-	
-	@Autowired
-	protected TeacherBlahblahRepository teacherBlahblahrepository;
 
 	@Override
-	public boolean authorise(final Request<TheoryTutorial> request) {
+	public boolean authorise(final Request<Blahblah> request) {
 		assert request != null;
 
 		boolean result;
-		int theoryTutorialId;
-		TheoryTutorial theoryTutorial;
-		boolean isOwner;
+		int blahblahId;
+		Blahblah blahblah;
 
-		theoryTutorialId = request.getModel().getInteger("id");
-		theoryTutorial = this.repository.findOneTheoryTutorialById(theoryTutorialId);
-		Integer teacher = this.repository.findTeacherByTheoryTutorialId(theoryTutorialId);
-		isOwner = teacher == request.getPrincipal().getActiveRoleId();
-		result = theoryTutorial != null && isOwner;
+		blahblahId = request.getModel().getInteger("id");
+		blahblah = this.repository.findOneBlahblahById(blahblahId);
+		result = blahblah != null;
 
 		return result;
 	}
 
 	@Override
-	public TheoryTutorial findOne(final Request<TheoryTutorial> request) {
+	public Blahblah findOne(final Request<Blahblah> request) {
 		assert request != null;
 
-		int theoryTutorialId;
-		TheoryTutorial result;
+		int blahblahId;
+		Blahblah result;
 
-		theoryTutorialId = request.getModel().getInteger("id");
-		result = this.repository.findOneTheoryTutorialById(theoryTutorialId);
+		blahblahId = request.getModel().getInteger("id");
+		result = this.repository.findOneBlahblahById(blahblahId);
 
 		return result;
 	}
 	
 	@Override
-	public void unbind(final Request<TheoryTutorial> request, final TheoryTutorial entity, final Model model) {
+	public void unbind(final Request<Blahblah> request, final Blahblah entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "title", "abstractText", "cost", "link", "publish");
-		List<Course> courses = (List<Course>) this.courseRepository.findCourses();
-		model.setAttribute("courses", courses);
+		request.unbind(entity, model, "ticker", "caption", "summary", "creationMoment", "cost", "initDate", "finishDate", "hlink");
 		
-		Money totalPrice = this.convertToLocalCurrency(entity.getCost());
-		model.setAttribute("cost", totalPrice);
+		Money cost = this.convertToLocalCurrency(entity.getCost());
+		model.setAttribute("cost", cost);
 		
-		Blahblah blahblah = this.teacherBlahblahrepository.findOneBlahblahByTheoryTutorialId(entity.getId());
+		model.setAttribute("masterId", entity.getTheoryTutorial().getId());
 		
-		if(blahblah!=null) {
-			model.setAttribute("hasBlahblah", true);
-			model.setAttribute("blahblahId", blahblah.getId());
-		}else {
-			model.setAttribute("hasBlahblah", false);
-			model.setAttribute("blahblahId", "");
-		}
+		boolean publishedTutorial = entity.getTheoryTutorial().isPublish();
+		model.setAttribute("publishedTutorial", publishedTutorial);
 	}
 	
 	// Other methods
@@ -159,4 +137,5 @@ public class TeacherTheoryTutorialShowService implements AbstractShowService<Tea
 		
 		return res;
 	}
+	
 }

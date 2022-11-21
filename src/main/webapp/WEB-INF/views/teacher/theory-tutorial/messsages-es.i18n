@@ -25,5 +25,8 @@ teacher.theory-tutorial.form.button.update = Actualizar
 teacher.theory-tutorial.form.button.delete = Borrar
 teacher.theory-tutorial.form.button.publish = Publicar
 
+teacher.theory-tutorial.blahblah.form.button.create = Nuevo Blahblah
+teacher.theory-tutorial.blahblah.form.button.view-blahblah = Ver Blablah
+
 teacher.theory-tutorial.form.error.negative-amount = El importe del coste no puede ser inferior o igual a 0
 teacher.theory-tutorial.form.error.unknown-currency = La divisa del coste no es aceptada por el sistema

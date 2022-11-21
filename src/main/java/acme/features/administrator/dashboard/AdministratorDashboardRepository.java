@@ -92,4 +92,20 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select max(h.budget.amount), h.budget.currency from HelpRequest h where h.status = 'DENIED' group by h.budget.currency")
 	List<Object> maximumBudgetOfDeniedHelpRequests();
 	
+	// CONTROL CHECK: Costs BLAHBLAH
+	@Query("select 1.0 * count(t) / (select count(t2) from TheoryTutorial t2) from Blahblah b where b.theoryTutorial is not null")
+	Double ratioOfTheoryTutorialWithBlahblah();
+	
+	@Query("select avg(b.cost.amount), b.cost.currency from Blahblah b group by b.cost.currency")
+	List<Object> averageCostOfBlahblah();
+
+	@Query("select stddev(b.cost.amount), b.cost.currency from Blahblah b group by b.cost.currency")
+	List<Object> deviationCostOfBlahblah();
+
+	@Query("select min(b.cost.amount), b.cost.currency from Blahblah b group by b.cost.currency")
+	List<Object> minimumCostOfBlahblah();
+	
+	@Query("select max(b.cost.amount), b.cost.currency from Blahblah b group by b.cost.currency")
+	List<Object> maximumCostOfBlahblah();
+	
 }

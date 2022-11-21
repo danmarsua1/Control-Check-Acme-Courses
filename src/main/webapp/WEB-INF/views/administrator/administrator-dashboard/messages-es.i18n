@@ -40,4 +40,8 @@ administrator.dashboard.form.label.deviationBudgetOfDeniedHelpRequests=Desviacio
 administrator.dashboard.form.label.minimumBudgetOfDeniedHelpRequests=Minimo del presupuesto de las tutorias denegadas
 administrator.dashboard.form.label.maximumBudgetOfDeniedHelpRequests =Maximo del presupuesto de las tutorias denegadas
 
-
+administrator.dashboard.form.label.ratioOfTheoryTutorialWithBlahblah = Ratio de Tutoriales Teóricos con Blahblahs
+administrator.dashboard.form.label.averageCostOfBlahblah = Media precio de Blahblah
+administrator.dashboard.form.label.deviationCostOfBlahblah = Desviacion precio de Blahblah
+administrator.dashboard.form.label.minimumCostOfBlahblah =  Minimo precio de Blahblah
+administrator.dashboard.form.label.maximumCostOfBlahblah = Maximo precio de Blahblah

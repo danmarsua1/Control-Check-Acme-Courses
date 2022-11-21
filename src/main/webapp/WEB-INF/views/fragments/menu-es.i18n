@@ -36,6 +36,7 @@ master.menu.authenticated.list-post = Listar Posts
 # master.menu.teacher ###################################################
 
 master.menu.teacher = Profesor
+master.menu.teacher.list-blahblah = Listar Blahblahs
 master.menu.teacher.create-course = Crear Curso
 master.menu.teacher.list-course = Listar Cursos
 master.menu.teacher.create-theory-tutorial = Crear Tutorial teórico

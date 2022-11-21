@@ -40,3 +40,8 @@ administrator.dashboard.form.label.deviationBudgetOfDeniedHelpRequests=Deviation
 administrator.dashboard.form.label.minimumBudgetOfDeniedHelpRequests=Minimum budget of denied help-requests
 administrator.dashboard.form.label.maximumBudgetOfDeniedHelpRequests =Maximum budget of denied help-requests
 
+administrator.dashboard.form.label.ratioOfTheoryTutorialWithBlahblah = Ratio of Theory Tutorials with Blahblahs
+administrator.dashboard.form.label.averageCostOfBlahblah = Average cost of Blahblah
+administrator.dashboard.form.label.deviationCostOfBlahblah = Deviation cost of Blahblah
+administrator.dashboard.form.label.minimumCostOfBlahblah = Minimum cost of Blahblah
+administrator.dashboard.form.label.maximumCostOfBlahblah = Maximum cost of Blahblah

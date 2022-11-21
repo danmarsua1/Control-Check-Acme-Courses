@@ -54,4 +54,14 @@
 			<acme:submit code="teacher.theory-tutorial.form.button.create" action="/teacher/theory-tutorial/create"/>
 		</jstl:when>
 	</jstl:choose>
+	
+	<jstl:if test="${command != 'create'}">
+		<jstl:if test="${hasBlahblah eq false && publish eq false}">
+			<acme:button code="teacher.theory-tutorial.blahblah.form.button.create" action="/teacher/blahblah/create?masterId=${id}&publishedTutorial=${publish}" />
+		</jstl:if>
+		<jstl:if test="${hasBlahblah eq true}">
+			<acme:button code="teacher.theory-tutorial.blahblah.form.button.view-blahblah" action="/teacher/blahblah/show?id=${blahblahId}" />
+		</jstl:if>
+	</jstl:if>
+	
 </acme:form>

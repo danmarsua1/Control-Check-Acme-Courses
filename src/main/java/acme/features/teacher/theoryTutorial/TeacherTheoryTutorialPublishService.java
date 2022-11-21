@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.Blahblah;
 import acme.entities.Configuration;
 import acme.entities.Course;
 import acme.entities.TheoryTutorial;
@@ -25,6 +26,7 @@ import acme.features.administrator.configuration.AdministratorConfigurationRepos
 import acme.features.any.course.AnyCourseRepository;
 import acme.features.any.register.RegisterRepository;
 import acme.features.any.theoryTutorial.AnyTheoryTutorialRepository;
+import acme.features.teacher.blahblah.TeacherBlahblahRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -57,6 +59,9 @@ public class TeacherTheoryTutorialPublishService implements AbstractUpdateServic
 	
 	@Autowired
 	protected SpamHelper helper;
+	
+	@Autowired
+	protected TeacherBlahblahRepository teacherBlahblahrepository;
 	
 	@Override
 	public boolean authorise(final Request<TheoryTutorial> request) {
@@ -135,6 +140,16 @@ public class TeacherTheoryTutorialPublishService implements AbstractUpdateServic
 		request.unbind(entity, model, "ticker", "title", "abstractText", "cost", "link", "publish");
 		List<Course> courses = (List<Course>) this.courseRepository.findCourses();
 		model.setAttribute("courses", courses);
+		
+		Blahblah blahblah = this.teacherBlahblahrepository.findOneBlahblahByTheoryTutorialId(entity.getId());
+		
+		if(blahblah!=null) {
+			model.setAttribute("hasBlahblah", true);
+			model.setAttribute("blahblahId", blahblah.getId());
+		}else {
+			model.setAttribute("hasBlahblah", false);
+			model.setAttribute("blahblahId", "");
+		}
 		
 	}	
 

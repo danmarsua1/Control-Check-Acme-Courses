@@ -61,5 +61,17 @@ public class AdministratorDashboard implements Serializable {
 	List<Object>						minimumBudgetOfDeniedHelpRequests;
 
 	List<Object>						maximumBudgetOfDeniedHelpRequests;
+	
+	// Control Check
+	
+	Double						ratioOfTheoryTutorialWithBlahblah;
+	
+	List<Object> 				averageCostOfBlahblah;
+	
+	List<Object> 				deviationCostOfBlahblah;
+	
+	List<Object> 				minimumCostOfBlahblah;
+	
+	List<Object> 				maximumCostOfBlahblah;
 
 }

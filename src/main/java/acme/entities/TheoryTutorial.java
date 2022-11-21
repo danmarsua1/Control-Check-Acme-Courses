@@ -2,7 +2,6 @@ package acme.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -50,11 +49,5 @@ public class TheoryTutorial extends AbstractEntity {
 	protected boolean publish;
 
 	// Derived attributes -----------------------------------------------------
-
-	// Relationships ----------------------------------------------------------
-	
-	@Valid
-	@OneToOne(optional=true)
-	protected Blahblah blahblah;
 
 }

@@ -1,7 +1,7 @@
-key,title,ticker,abstract-text,cost,link,publish,key:blahblah
-theory-tutorial-01,Tutorial01,TTU-001,Tutorial01,USD 1.1,https://www.theory-tutorial.com,true,blahblah-01
-theory-tutorial-02,Tutorial02,TTU-002,Tutorial02,GBP 1.0,https://www.theory-tutorial.com,false,
-theory-tutorial-03,Tutorial03,TTU-003,Tutorial03,EUR 0.8,https://www.theory-tutorial.com,true,blahblah-03
-theory-tutorial-04,Tutorial04,TTU-004,Tutorial04,GBP 1.7,https://www.theory-tutorial.com,false,
-theory-tutorial-05,Tutorial05,TTU-005,Tutorial05,USD 1.3,https://www.theory-tutorial.com,true,blahblah-05
-theory-tutorial-06,Tutorial06,TTU-006,Tutorial06,EUR 1.0,https://www.theory-tutorial.com,true,blahblah-06
+key,title,ticker,abstract-text,cost,link,publish
+theory-tutorial-01,Tutorial01,TTU-001,Tutorial01,USD 1.1,https://www.theory-tutorial.com,true
+theory-tutorial-02,Tutorial02,TTU-002,Tutorial02,GBP 1.0,https://www.theory-tutorial.com,false
+theory-tutorial-03,Tutorial03,TTU-003,Tutorial03,EUR 0.8,https://www.theory-tutorial.com,true
+theory-tutorial-04,Tutorial04,TTU-004,Tutorial04,GBP 1.7,https://www.theory-tutorial.com,false
+theory-tutorial-05,Tutorial05,TTU-005,Tutorial05,USD 1.3,https://www.theory-tutorial.com,true
+theory-tutorial-06,Tutorial06,TTU-006,Tutorial06,EUR 1.0,https://www.theory-tutorial.com,true

@@ -1,0 +1,30 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for teacher particular
+# purposes.  The copyright owner does not offer teacher warranties or representations, nor do
+# they accept teacher liabilities with respect to them.
+
+teacher.blahblah.list.label.ticker = Code
+teacher.blahblah.list.label.caption = Statement
+
+teacher.blahblah.form.label.ticker = Code
+teacher.blahblah.form.label.caption = Title
+teacher.blahblah.form.label.summary = Summary
+teacher.blahblah.form.label.creationMoment = Creation moment
+teacher.blahblah.form.label.initDate = Init date
+teacher.blahblah.form.label.finishDate = Finish date
+teacher.blahblah.form.label.cost = Cost
+teacher.blahblah.form.label.hlink = Hyper Link
+
+teacher.blahblah.form.button.create = Create
+teacher.blahblah.form.button.update = Update
+teacher.blahblah.form.button.delete = Delete
+
+teacher.blahblah.form.error.too-close-initial = The entered initial period date must be at least one week after the del Blahblah creation date
+teacher.blahblah.form.error.too-close-final = The entered final period date must be at least one day after the del Blahblah initial period date
+teacher.blahblah.form.error.negative-amount = The cost's amount can not lower or equal than 0
+teacher.blahblah.form.error.unknown-currency = The cost's currency is not accepted by the system
