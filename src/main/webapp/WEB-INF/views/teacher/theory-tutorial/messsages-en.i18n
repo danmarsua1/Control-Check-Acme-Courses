@@ -30,3 +30,5 @@ teacher.theory-tutorial.blahblah.form.button.view-blahblah = View Blablah
 
 teacher.theory-tutorial.form.error.negative-amount = The cost's amount can not lower or equal than 0
 teacher.theory-tutorial.form.error.unknown-currency = The cost's currency is not accepted by the system
+
+javax.validation.constraints.MustNumber.message = Must be a number

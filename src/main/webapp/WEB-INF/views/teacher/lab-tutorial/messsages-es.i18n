@@ -27,3 +27,5 @@ teacher.lab-tutorial.form.button.publish = Publicar
 
 teacher.lab-tutorial.form.error.negative-amount = El importe del coste no puede ser inferior o igual a 0
 teacher.lab-tutorial.form.error.unknown-currency = La divisa del coste no es aceptada por el sistema
+
+javax.validation.constraints.MustNumber.message = Debe ser numérico
